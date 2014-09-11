@@ -9,9 +9,12 @@ import java.util.Date;
  */
 public class Boss {
     public static void main(String[] args) {
+       
+        HumanResources hr = new HumanResources();
+        
         Employee employee = new Employee("Peter","Piper","333-1234",(new Date(1980,05,20)));
         
-        employee.doOrientation("C123");
+        hr.StartOrientation(employee, "C123");
         
         System.out.println("The employee's status is: " + employee.getStatus());
     }
